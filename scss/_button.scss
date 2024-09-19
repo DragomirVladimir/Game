@@ -1,0 +1,48 @@
+.button {
+  display: flex;
+  width: fit-content;
+  min-width: 323px;
+  height: 84px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+  transition: font-size 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+
+  &--primary {
+    background: linear-gradient(103deg, #ffe53b -32.17%, #ff2525 114.07%);
+
+    &:hover {
+      font-size: 24px;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0),
+        8px 8px 10px 0px rgba(0, 0, 0, 0.4) inset;
+    }
+  }
+
+  &--secondary {
+    border: 2px solid #ffffff;
+
+    &:hover {
+      font-size: 24px;
+      background-color: #373737;
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    min-width: fit-content;
+    max-width: 360px;
+    height: 56px;
+    font-size: 24px;
+  }
+}

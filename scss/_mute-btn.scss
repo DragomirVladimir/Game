@@ -1,0 +1,59 @@
+.mute-btn {
+  position: fixed;
+  top: 48px;
+  right: 74px;
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ec1119;
+  z-index: 10;
+
+  @media (max-width: 1200px) {
+    width: 44px;
+    height: 44px;
+    top: 25px;
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+
+    background-image: url("../images/icons/icon-mute.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &::after {
+    // display: none;
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    transition: width 0.2s ease;
+  }
+
+  &.mute {
+    &::after {
+      width: 140%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Nirmala";
+  src: url("../fonts/nirmala-ui-bold.woff2") format("woff2"),
+    url("../fonts/nirmala-ui-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nirmala";
+  src: url("../fonts/nirmala-ui.woff2") format("woff2"),
+    url("../fonts/nirmala-ui.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
